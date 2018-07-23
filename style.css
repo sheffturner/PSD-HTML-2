@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
-*{
-    font-family: 'Roboto Condensed', sans-serif;
-}
 
 body, ul, li{
     margin: 0;
@@ -16,6 +13,7 @@ p, li, h1, h2, h3, h4{
 
 body{
     background: #f7f7f7;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 header{
@@ -74,9 +72,48 @@ header nav li a.current{
 #lead-banner{
     max-height: 400px;
     overflow: hidden;
+    position: relative;
 }
 #lead-banner img{
     width: 100%;
+}
+
+.banner-overlay{
+    position: absolute;
+    top: 25%;
+    width: 100%;
+}
+
+.banner-title{
+    font-size: 32px;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(243, 243, 243);
+    font-weight: bold; 
+    text-align: center; 
+}
+
+#lead-banner p{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(168, 168, 168);
+    font-weight: bold;
+    font-size: 26px;
+}
+
+#lead-banner a{
+    display: block;
+    width: 130px;
+    margin: 0 auto;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 15px 0 10px;
+    background: #3f8dbf;
+    box-shadow: 0px 3px 0px 0px #ccc;
+    font-size: 14px;
+    margin-top: 45px;
 }
 
 section{
@@ -227,6 +264,20 @@ footer ul li{
     #burger-nav{
         display:none;
     }
+
+    .banner-title{
+        font-size: 28px;
+    }
+
+    #lead-banner p{
+        font-size: 23px;
+    }
+
+    #lead-banner a{
+        width: 100px;
+        font-size:12px;
+        padding: 8px 0;
+    }
 }
 
 @media (max-width: 768px){
@@ -262,9 +313,41 @@ footer ul li{
         display:none;
     }
 
+    .banner-title{
+        font-size: 24px;
+    }
+
+    #lead-banner p{
+        font-size: 20px;
+    }
+
+    #lead-banner a{
+        width: 90px;
+        font-size:10px;
+        padding: 8px 0;
+        margin-top:20px;
+    }
+
 }
 
-@media (max-width: 480px){
+@media (max-width: 624px){
+    .banner-title{
+        font-size: 18px;
+    }
+
+    #lead-banner p{
+        font-size: 15px;
+    }
+
+    #lead-banner a{
+        width: 90px;
+        font-size:9px;
+        padding: 8px 0;
+        margin-top:20px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px){
     #selling-points li{
         width:80%;
         padding: 0 10%;
@@ -346,5 +429,22 @@ footer ul li{
     header nav ul.expand{
         height: auto;
     }
+
+    
+    .banner-title{
+        font-size: 3vw;
+    }
+
+    #lead-banner p{
+        font-size: 2.5vw;
+    }
+
+    #lead-banner a{
+        width: 50px;
+        font-size:6px;
+        padding: 8px 0;
+        margin-top: 2px;
+    }
+
 
 }
