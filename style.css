@@ -85,7 +85,7 @@ header nav li a.current{
 }
 
 .banner-title{
-    font-size: 32px;
+    font-size: 3vw;
     font-family: 'Roboto Slab', serif;
     color: rgb(243, 243, 243);
     font-weight: bold; 
@@ -97,7 +97,7 @@ header nav li a.current{
     font-family: 'Roboto Slab', serif;
     color: rgb(168, 168, 168);
     font-weight: bold;
-    font-size: 26px;
+    font-size: 2.5vw;
 }
 
 #lead-banner a{
@@ -266,11 +266,11 @@ footer ul li{
     }
 
     .banner-title{
-        font-size: 28px;
+        font-size: 3vw;
     }
 
     #lead-banner p{
-        font-size: 23px;
+        font-size: 2.5vw;
     }
 
     #lead-banner a{
@@ -314,11 +314,11 @@ footer ul li{
     }
 
     .banner-title{
-        font-size: 24px;
+        font-size: 3vw;
     }
 
     #lead-banner p{
-        font-size: 20px;
+        font-size: 2.5vw;
     }
 
     #lead-banner a{
@@ -328,23 +328,6 @@ footer ul li{
         margin-top:20px;
     }
 
-}
-
-@media (max-width: 624px){
-    .banner-title{
-        font-size: 18px;
-    }
-
-    #lead-banner p{
-        font-size: 15px;
-    }
-
-    #lead-banner a{
-        width: 90px;
-        font-size:9px;
-        padding: 8px 0;
-        margin-top:20px;
-    }
 }
 
 @media (min-width: 320px) and (max-width: 480px){
