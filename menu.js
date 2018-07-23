@@ -1,5 +1,5 @@
 $(document).ready(function(){
     $("#burger-nav").on("click", function(){
-        $("header nav ul").toggleclass("expand");
+        $("header nav ul").toggleClass("expand");
     });
 });
