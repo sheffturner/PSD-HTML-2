@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 *{
-    font-family: 'Roboto Condensed', sans-serif !important;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 body, ul, li{
@@ -187,7 +187,165 @@ footer ul li{
 }
 
 #copyright{
-    border-top: 2px solid white;
+    border-top: 2px solid #9f9f9f;
     margin-top: 50px;
     padding: 30px 0;
+    color: #9f9f9f;
+}
+
+#burger-nav{
+    display:none;
+}
+
+
+@media (max-width:960px){
+    #selling-points li{
+        width: 40%;
+        padding: 0 5%;
+        margin: 20px 0;
+    }
+
+    #footer-nav ul{
+        width: 50%;
+    }
+
+    #footer-nav ul:nth-child(even) li{
+        padding-left: 20%;
+        margin-right: 0;
+    }
+
+    #footer-nav ul:nth-child(odd){
+        clear: both;
+    }
+
+
+    #quote{
+        width: 90%;
+        padding: 60px 5% 40px;
+    }
+
+    #burger-nav{
+        display:none;
+    }
+}
+
+@media (max-width: 768px){
+    header nav{
+        float: none;
+    }
+
+    header nav li{
+        margin-left: 0;
+        width: 16.66%;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    #logo{
+        float:none;
+        margin: 0 auto 15px;
+    }
+
+
+    #latest-works ul li{
+        float: none;
+        width: 60%;
+        margin: 30px 20% !important;
+    }
+
+    #latest-works h2{
+        margin-top: 0;
+        text-align: center;
+    }
+
+    #burger-nav{
+        display:none;
+    }
+
+}
+
+@media (max-width: 480px){
+    #selling-points li{
+        width:80%;
+        padding: 0 10%;
+        margin: 20px 0;
+    }
+
+    #latest-works li{
+        width: 80%;
+        margin: 30px 10% !important;
+    }
+
+    #quote{
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    #footer-nav ul{
+        width: 100%;
+        float: none !important;
+    }
+
+    #footer-nav li{
+        width: 80%;
+        padding: 0 10% !important;
+        font-size: 14px;
+    }
+
+    #footer-nav ul li h4{
+        text-align: center;
+        font-size: 16px;
+    }
+
+    #copyright{
+        font-size: 10px;
+        text-align: center;
+    }
+
+    header nav li{
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+
+    header nav{
+        background: #555;
+    }
+
+    header .wrapper{
+        padding: 0;
+        width: 100%;
+    }
+
+    header{
+        padding-bottom: 0;
+    }
+
+    header nav li a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        color: #999;
+        border-top: 1px solid #4f4f4f;
+    }
+
+    #burger-nav{
+        display: block;
+        color: white;
+        height: 40px;
+        text-align: right;
+        padding-right: 12px;
+        cursor: pointer;
+    }
+    
+    header nav ul{
+        height: 0;
+        overflow: hidden;
+    }
+
+    header nav ul.expand{
+        height: auto;
+    }
+
+}
 }
